@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import { useEffect, useState } from "react";
 import { CheckInEntry, getWeekDates, getWeekHistory } from "@/lib/checkin-storage";
 import { Check, X, Minus } from "lucide-react";
 
@@ -7,8 +9,27 @@ interface WeeklyHistoryProps {
 }
 
 const WeeklyHistory = ({ onClose }: WeeklyHistoryProps) => {
+  const { t } = useTranslation();
+  const [history, setHistory] = useState<(CheckInEntry | null)[]>([]);
+  const [loading, setLoading] = useState(true);
   const dates = getWeekDates();
-  const history = getWeekHistory();
+
+  useEffect(() => {
+    const fetchHistory = async () => {
+      const data = await getWeekHistory();
+      setHistory(data);
+      setLoading(false);
+    };
+    fetchHistory();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center p-12">
+        <div className="w-8 h-8 border-4 border-sc-midnight/10 border-t-sc-midnight rounded-full animate-spin"></div>
+      </div>
+    );
+  }
 
   const smokeFreeCount = history.filter((e) => e !== null && !e.smoked).length;
   const smokedCount = history.filter((e) => e !== null && e.smoked).length;
@@ -27,8 +48,9 @@ const WeeklyHistory = ({ onClose }: WeeklyHistoryProps) => {
 
   const getDetail = (entry: CheckInEntry | null) => {
     if (!entry) return "—";
-    if (!entry.smoked) return "Smoke-free ✓";
-    return entry.count ? `${entry.count} cig${entry.count === "1" ? "" : "s"}` : "Smoked";
+    if (!entry.smoked) return t("history.smoke_free_check");
+    const countLabel = entry.count === "1" ? t("history.cig") : t("history.cigs");
+    return entry.count ? `${entry.count} ${countLabel}` : t("history.smoked");
   };
 
   const today = new Date().toISOString().split("T")[0];
@@ -43,8 +65,8 @@ const WeeklyHistory = ({ onClose }: WeeklyHistoryProps) => {
       className="flex flex-col items-center text-center gap-6"
     >
       <div>
-        <h2 className="sc-heading text-xl text-sc-midnight mb-1">Your Week</h2>
-        <p className="sc-body text-sm text-sc-midnight/50">Last 7 days at a glance</p>
+        <h2 className="sc-heading text-xl text-sc-midnight mb-1">{t("history.title")}</h2>
+        <p className="sc-body text-sm text-sc-midnight/50">{t("history.subtitle")}</p>
       </div>
 
       {/* Week grid */}
@@ -62,11 +84,10 @@ const WeeklyHistory = ({ onClose }: WeeklyHistoryProps) => {
               className="flex flex-col items-center gap-1.5 flex-1"
             >
               <span
-                className={`sc-body text-[11px] font-medium ${
-                  isToday ? "text-sc-midnight" : "text-sc-midnight/40"
-                }`}
+                className={`sc-body text-[11px] font-medium ${isToday ? "text-sc-midnight" : "text-sc-midnight/40"
+                  }`}
               >
-                {day.dayName}
+                {t(`history.days.${day.dayName}`)}
               </span>
 
               <div
@@ -92,15 +113,15 @@ const WeeklyHistory = ({ onClose }: WeeklyHistoryProps) => {
       >
         <div className="flex-1 bg-sc-sage/15 rounded-2xl py-4 px-3">
           <p className="sc-heading text-2xl text-sc-midnight">{smokeFreeCount}</p>
-          <p className="sc-body text-xs text-sc-midnight/50 mt-0.5">Smoke-free</p>
+          <p className="sc-body text-xs text-sc-midnight/50 mt-0.5">{t("history.smoke_free")}</p>
         </div>
         <div className="flex-1 bg-sc-coral/15 rounded-2xl py-4 px-3">
           <p className="sc-heading text-2xl text-sc-midnight">{smokedCount}</p>
-          <p className="sc-body text-xs text-sc-midnight/50 mt-0.5">Smoked</p>
+          <p className="sc-body text-xs text-sc-midnight/50 mt-0.5">{t("history.smoked")}</p>
         </div>
         <div className="flex-1 bg-sc-midnight/5 rounded-2xl py-4 px-3">
           <p className="sc-heading text-2xl text-sc-midnight">{7 - smokeFreeCount - smokedCount}</p>
-          <p className="sc-body text-xs text-sc-midnight/50 mt-0.5">No data</p>
+          <p className="sc-body text-xs text-sc-midnight/50 mt-0.5">{t("history.no_data")}</p>
         </div>
       </motion.div>
 
@@ -113,10 +134,10 @@ const WeeklyHistory = ({ onClose }: WeeklyHistoryProps) => {
           className="sc-body text-sm text-sc-midnight/60 max-w-[280px] leading-relaxed"
         >
           {smokeFreeCount >= 5
-            ? "Incredible consistency — you're proving it to yourself."
+            ? t("history.consistency")
             : smokeFreeCount >= 3
-            ? "More than half the week smoke-free. That's real progress."
-            : "Every smoke-free day counts. Keep going."}
+              ? t("history.progress")
+              : t("history.every_day_counts")}
         </motion.p>
       )}
 
@@ -124,7 +145,7 @@ const WeeklyHistory = ({ onClose }: WeeklyHistoryProps) => {
         onClick={onClose}
         className="sc-pill sc-pill-midnight sc-shadow mt-2"
       >
-        Start Today's Check-In
+        {t("history.start_checkin")}
       </button>
     </motion.div>
   );

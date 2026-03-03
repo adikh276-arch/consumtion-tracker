@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Project specific
+.env
+init-db.cjs
+translate.cjs
+.mcp.json
+*.webp

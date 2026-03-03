@@ -1,0 +1,71 @@
+{
+  "app": {
+    "title": "Pemeriksaan Asap",
+    "subtitle": "Sebentar saja saya jujur.",
+    "check_in": "Apakah kamu merokok hari ini?",
+    "yes": "Ya",
+    "no": "TIDAK",
+    "view_history": "Lihat Riwayat Mingguan",
+    "how_many": "Berapa batang rokok yang kamu hisap?",
+    "urge_time": "Kapan dorongan itu terasa paling kuat?",
+    "feel": "Bagaimana perasaanmu sekarang?",
+    "next_time": "Apa yang ingin Anda lakukan secara berbeda di lain waktu?",
+    "reflection_placeholder": "Contoh: Tunggu 10 menit sebelum menyalakan api.",
+    "save": "Hemat Hari Ini",
+    "awareness": "Kesadaran adalah awal dari perubahan.",
+    "tomorrow": "Besok adalah kesempatan lain — dan kamu mampu meraihnya.",
+    "done": "Selesai"
+  },
+  "feedback": {
+    "stayed_smoke_free": "Anda tidak merokok hari ini.",
+    "choice_matters": "Pilihan itu lebih penting daripada yang Anda kira.",
+    "continue": "Melanjutkan",
+    "strengthening": "Anda sedang memperkuat kendali Anda.",
+    "keep_showing_up": "Teruslah hadir untuk diri sendiri — itu berhasil.",
+    "finish": "Selesaikan Proses Check-In",
+    "saved": "Tersimpan",
+    "view_week": "Lihat Minggu Anda"
+  },
+  "options": {
+    "count": {
+      "1": "1",
+      "2_3": "2–3",
+      "4_5": "4–5",
+      "more_5": "Lebih dari 5"
+    },
+    "urge": {
+      "morning": "Pagi",
+      "afternoon": "Sore",
+      "evening": "Malam",
+      "late_night": "Larut malam"
+    },
+    "feel": {
+      "okay": "Oke",
+      "neutral": "Netral",
+      "not_great": "Tidak bagus"
+    }
+  },
+  "history": {
+    "title": "Minggu Anda",
+    "subtitle": "7 hari terakhir secara singkat",
+    "smoke_free": "Bebas asap rokok",
+    "smoked": "Diasap",
+    "no_data": "Tidak ada data",
+    "smoke_free_check": "Bebas asap rokok ✓",
+    "cig": "rokok",
+    "cigs": "rokok",
+    "consistency": "Konsistensi yang luar biasa — Anda membuktikannya pada diri sendiri.",
+    "progress": "Lebih dari setengah minggu bebas asap rokok. Itu kemajuan yang nyata.",
+    "every_day_counts": "Setiap hari bebas asap rokok sangat berarti. Teruslah berjuang.",
+    "start_checkin": "Mulai Proses Check-In Hari Ini",
+    "days": {
+      "Sun": "Matahari",
+      "Mon": "-ku",
+      "Tue": "Selasa",
+      "Wed": "Menikahi",
+      "Thu": "Mengumpulkan",
+      "Fri": "Jumat",
+      "Sat": "Duduk"
+    }
+  }
+}

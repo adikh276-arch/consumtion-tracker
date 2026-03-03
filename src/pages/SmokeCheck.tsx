@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { Check, BarChart3, X, Minus } from "lucide-react";
+import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Check, BarChart3 } from "lucide-react";
-import { saveCheckIn, getTodayKey, getHistory } from "@/lib/checkin-storage";
+import { useTranslation } from "react-i18next";
+import { saveCheckIn, getTodayKey, getHistory, CheckInEntry, getWeekDates, getWeekHistory } from "@/lib/checkin-storage";
 import WeeklyHistory from "@/components/WeeklyHistory";
 
 type Screen =
@@ -31,20 +32,32 @@ const fade = {
 };
 
 const SmokeCheck = () => {
-  const hasAnyHistory = getHistory().length > 0;
-  const [screen, setScreen] = useState<Screen>(hasAnyHistory ? "history" : "start");
+  const { t } = useTranslation();
+  const [hasAnyHistory, setHasAnyHistory] = useState(false);
+  const [screen, setScreen] = useState<Screen>("start");
   const [smoked, setSmoked] = useState("");
   const [count, setCount] = useState("");
   const [urge, setUrge] = useState("");
   const [feeling, setFeeling] = useState("");
   const [step, setStep] = useState("");
 
+  useEffect(() => {
+    const checkHistory = async () => {
+      const history = await getHistory();
+      if (history.length > 0) {
+        setHasAnyHistory(true);
+        setScreen("history");
+      }
+    };
+    checkHistory();
+  }, []);
+
   const go = (next: Screen, delay = 350) => {
     setTimeout(() => setScreen(next), delay);
   };
 
-  const saveAndFinish = (didSmoke: boolean) => {
-    saveCheckIn({
+  const saveAndFinish = async (didSmoke: boolean) => {
+    await saveCheckIn({
       date: getTodayKey(),
       smoked: didSmoke,
       ...(didSmoke && {
@@ -54,11 +67,26 @@ const SmokeCheck = () => {
         reflection: step || undefined,
       }),
     });
+    setHasAnyHistory(true);
   };
 
-  const countOptions = ["1", "2–3", "4–5", "More than 5"];
-  const urgeOptions = ["Morning", "Afternoon", "Evening", "Late night"];
-  const feelOptions = ["Okay", "Neutral", "Not great"];
+  const countOptions = [
+    t("options.count.1"),
+    t("options.count.2_3"),
+    t("options.count.4_5"),
+    t("options.count.more_5"),
+  ];
+  const urgeOptions = [
+    t("options.urge.morning"),
+    t("options.urge.afternoon"),
+    t("options.urge.evening"),
+    t("options.urge.late_night"),
+  ];
+  const feelOptions = [
+    t("options.feel.okay"),
+    t("options.feel.neutral"),
+    t("options.feel.not_great"),
+  ];
 
   return (
     <div className="sc-gradient min-h-screen flex items-center justify-center px-6">
@@ -78,21 +106,20 @@ const SmokeCheck = () => {
             <motion.div key="start" {...slide} className="flex flex-col items-center text-center gap-8">
               <span className="text-4xl">🚬</span>
               <div>
-                <h1 className="sc-heading text-[1.75rem] mb-2">Smoke Check</h1>
-                <p className="sc-body text-sc-midnight/50 text-sm">Just a moment of honesty.</p>
+                <h1 className="sc-heading text-[1.75rem] mb-2">{t("app.title")}</h1>
+                <p className="sc-body text-sc-midnight/50 text-sm">{t("app.subtitle")}</p>
               </div>
-              <p className="sc-body text-lg text-sc-midnight">Did you smoke a cigarette today?</p>
+              <p className="sc-body text-lg text-sc-midnight">{t("app.check_in")}</p>
               <div className="flex flex-col gap-3 w-full">
-                {["Yes", "No"].map((opt) => (
+                {[t("app.yes"), t("app.no")].map((opt) => (
                   <button
                     key={opt}
                     onClick={() => {
                       setSmoked(opt);
-                      go(opt === "No" ? "no-reinforce" : "how-many");
+                      go(opt === t("app.no") ? "no-reinforce" : "how-many");
                     }}
-                    className={`sc-pill w-full ${
-                      smoked === opt ? "sc-pill-midnight" : "sc-pill-outline"
-                    }`}
+                    className={`sc-pill w-full ${smoked === opt ? "sc-pill-midnight" : "sc-pill-outline"
+                      }`}
                   >
                     {opt}
                   </button>
@@ -105,7 +132,7 @@ const SmokeCheck = () => {
                   className="flex items-center gap-2 text-sm sc-body text-sc-midnight/40 hover:text-sc-midnight/60 transition-colors mt-2"
                 >
                   <BarChart3 className="w-4 h-4" />
-                  View Weekly History
+                  {t("app.view_history")}
                 </button>
               )}
             </motion.div>
@@ -114,7 +141,7 @@ const SmokeCheck = () => {
           {/* YES – How many */}
           {screen === "how-many" && (
             <motion.div key="how-many" {...slide} className="flex flex-col items-center text-center gap-8">
-              <p className="sc-body text-lg text-sc-midnight">How many cigarettes did you smoke?</p>
+              <p className="sc-body text-lg text-sc-midnight">{t("app.how_many")}</p>
               <div className="flex flex-col gap-3 w-full">
                 {countOptions.map((opt) => (
                   <button
@@ -123,9 +150,8 @@ const SmokeCheck = () => {
                       setCount(opt);
                       go("urge-time");
                     }}
-                    className={`sc-pill w-full ${
-                      count === opt ? "sc-pill-coral" : "sc-pill-outline"
-                    }`}
+                    className={`sc-pill w-full ${count === opt ? "sc-pill-coral" : "sc-pill-outline"
+                      }`}
                   >
                     {opt}
                   </button>
@@ -137,7 +163,7 @@ const SmokeCheck = () => {
           {/* YES – Urge time */}
           {screen === "urge-time" && (
             <motion.div key="urge-time" {...slide} className="flex flex-col items-center text-center gap-8">
-              <p className="sc-body text-lg text-sc-midnight">When did the urge feel strongest?</p>
+              <p className="sc-body text-lg text-sc-midnight">{t("app.urge_time")}</p>
               <div className="flex flex-col gap-3 w-full">
                 {urgeOptions.map((opt) => (
                   <button
@@ -146,9 +172,8 @@ const SmokeCheck = () => {
                       setUrge(opt);
                       go("feel");
                     }}
-                    className={`sc-pill w-full ${
-                      urge === opt ? "sc-pill-sage" : "sc-pill-outline"
-                    }`}
+                    className={`sc-pill w-full ${urge === opt ? "sc-pill-sage" : "sc-pill-outline"
+                      }`}
                   >
                     {opt}
                   </button>
@@ -160,7 +185,7 @@ const SmokeCheck = () => {
           {/* YES – Feel */}
           {screen === "feel" && (
             <motion.div key="feel" {...slide} className="flex flex-col items-center text-center gap-8">
-              <p className="sc-body text-lg text-sc-midnight">How do you feel about it now?</p>
+              <p className="sc-body text-lg text-sc-midnight">{t("app.feel")}</p>
               <div className="flex flex-col gap-3 w-full">
                 {feelOptions.map((opt) => (
                   <button
@@ -169,9 +194,8 @@ const SmokeCheck = () => {
                       setFeeling(opt);
                       go("reflection");
                     }}
-                    className={`sc-pill w-full ${
-                      feeling === opt ? "sc-pill-coral" : "sc-pill-outline"
-                    }`}
+                    className={`sc-pill w-full ${feeling === opt ? "sc-pill-coral" : "sc-pill-outline"
+                      }`}
                   >
                     {opt}
                   </button>
@@ -184,24 +208,24 @@ const SmokeCheck = () => {
           {screen === "reflection" && (
             <motion.div key="reflection" {...slide} className="flex flex-col items-center text-center gap-6">
               <p className="sc-body text-lg text-sc-midnight">
-                What would you like to do differently next time?
+                {t("app.next_time")}
               </p>
               <input
                 type="text"
                 value={step}
                 onChange={(e) => setStep(e.target.value)}
-                placeholder="e.g. Wait 10 min before lighting up"
+                placeholder={t("app.reflection_placeholder")}
                 className="sc-input"
                 autoFocus
               />
               <button
-                onClick={() => {
-                  saveAndFinish(true);
+                onClick={async () => {
+                  await saveAndFinish(true);
                   setScreen("yes-done");
                 }}
                 className="sc-pill sc-pill-midnight sc-shadow mt-2"
               >
-                Save Today
+                {t("app.save")}
               </button>
             </motion.div>
           )}
@@ -210,16 +234,16 @@ const SmokeCheck = () => {
           {screen === "yes-done" && (
             <motion.div key="yes-done" {...fade} className="flex flex-col items-center text-center gap-5">
               <p className="sc-heading text-xl text-sc-midnight">
-                Awareness is how change begins.
+                {t("app.awareness")}
               </p>
               <p className="sc-body text-sm text-sc-midnight/60 max-w-[280px] leading-relaxed">
-                Tomorrow is another opportunity — and you're capable of it.
+                {t("app.tomorrow")}
               </p>
               <button
                 onClick={() => setScreen("final-done")}
                 className="sc-pill sc-pill-midnight sc-shadow mt-6"
               >
-                Done
+                {t("app.done")}
               </button>
             </motion.div>
           )}
@@ -228,19 +252,19 @@ const SmokeCheck = () => {
           {screen === "no-reinforce" && (
             <motion.div key="no-reinforce" {...fade} className="flex flex-col items-center text-center gap-5">
               <h2 className="sc-heading text-2xl text-sc-midnight">
-                You stayed smoke-free today.
+                {t("feedback.stayed_smoke_free")}
               </h2>
               <p className="sc-body text-sm text-sc-midnight/60">
-                That choice matters more than you think.
+                {t("feedback.choice_matters")}
               </p>
               <button
-                onClick={() => {
-                  saveAndFinish(false);
+                onClick={async () => {
+                  await saveAndFinish(false);
                   go("no-close", 0);
                 }}
                 className="sc-pill sc-pill-midnight sc-shadow mt-6"
               >
-                Continue
+                {t("feedback.continue")}
               </button>
             </motion.div>
           )}
@@ -249,16 +273,16 @@ const SmokeCheck = () => {
           {screen === "no-close" && (
             <motion.div key="no-close" {...fade} className="flex flex-col items-center text-center gap-5">
               <p className="sc-heading text-xl text-sc-midnight">
-                You're strengthening your control.
+                {t("feedback.strengthening")}
               </p>
               <p className="sc-body text-sm text-sc-midnight/60 max-w-[280px] leading-relaxed">
-                Keep showing up for yourself — it's working.
+                {t("feedback.keep_showing_up")}
               </p>
               <button
                 onClick={() => setScreen("final-done")}
                 className="sc-pill sc-pill-midnight sc-shadow mt-6"
               >
-                Finish Check-In
+                {t("feedback.finish")}
               </button>
             </motion.div>
           )}
@@ -275,14 +299,14 @@ const SmokeCheck = () => {
               <div className="w-16 h-16 rounded-full bg-sc-sage flex items-center justify-center shadow-lg">
                 <Check className="w-8 h-8 text-white" />
               </div>
-              <p className="sc-heading text-lg text-sc-midnight">Saved</p>
+              <p className="sc-heading text-lg text-sc-midnight">{t("feedback.saved")}</p>
 
               <button
                 onClick={() => setScreen("history")}
                 className="flex items-center gap-2 text-sm sc-body text-sc-midnight/40 hover:text-sc-midnight/60 transition-colors mt-4"
               >
                 <BarChart3 className="w-4 h-4" />
-                View Your Week
+                {t("feedback.view_week")}
               </button>
             </motion.div>
           )}

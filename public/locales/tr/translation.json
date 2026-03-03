@@ -1,0 +1,71 @@
+{
+  "app": {
+    "title": "Duman Kontrolü",
+    "subtitle": "Sadece bir anlık dürüstlük.",
+    "check_in": "Bugün sigara içtiniz mi?",
+    "yes": "Evet",
+    "no": "HAYIR",
+    "view_history": "Haftalık Geçmişi Görüntüle",
+    "how_many": "Kaç sigara içtiniz?",
+    "urge_time": "Bu dürtü en güçlü ne zaman hissedildi?",
+    "feel": "Şimdi bu konuda ne düşünüyorsunuz?",
+    "next_time": "Bir dahaki sefere neyi farklı yapmak istersiniz?",
+    "reflection_placeholder": "Örneğin, yakmadan önce 10 dakika bekleyin.",
+    "save": "Bugün tasarruf edin",
+    "awareness": "Farkındalık, değişimin başlangıcıdır.",
+    "tomorrow": "Yarın yeni bir fırsat ve siz bunu başarabilecek yeteneğe sahipsiniz.",
+    "done": "Tamamlamak"
+  },
+  "feedback": {
+    "stayed_smoke_free": "Bugün sigara içmediniz.",
+    "choice_matters": "Bu seçim sandığınızdan daha önemli.",
+    "continue": "Devam etmek",
+    "strengthening": "Kontrolünüzü güçlendiriyorsunuz.",
+    "keep_showing_up": "Kendinize destek olmaya devam edin; işe yarıyor.",
+    "finish": "Giriş işlemini tamamlayın",
+    "saved": "Kaydedildi",
+    "view_week": "Haftanızı Görüntüle"
+  },
+  "options": {
+    "count": {
+      "1": "1",
+      "2_3": "2–3",
+      "4_5": "4–5",
+      "more_5": "5'ten fazla"
+    },
+    "urge": {
+      "morning": "Sabah",
+      "afternoon": "Öğleden sonra",
+      "evening": "Akşam",
+      "late_night": "Gece geç saatlerde"
+    },
+    "feel": {
+      "okay": "Tamam",
+      "neutral": "Doğal",
+      "not_great": "Pek iyi değil."
+    }
+  },
+  "history": {
+    "title": "Haftanız",
+    "subtitle": "Son 7 güne genel bakış",
+    "smoke_free": "Sigara içilmeyen alan",
+    "smoked": "Füme",
+    "no_data": "Veri yok",
+    "smoke_free_check": "Sigara içilmeyen alan ✓",
+    "cig": "sigara",
+    "cigs": "sigaralar",
+    "consistency": "İnanılmaz bir istikrar — bunu kendinize kanıtlıyorsunuz.",
+    "progress": "Haftanın yarısından fazlasını sigarasız geçirdim. Bu gerçek bir ilerleme.",
+    "every_day_counts": "Sigarasız geçen her gün önemlidir. Devam edin.",
+    "start_checkin": "Bugünkü Giriş İşlemine Başla",
+    "days": {
+      "Sun": "Güneş",
+      "Mon": "Benim",
+      "Tue": "Salı",
+      "Wed": "Çarşamba",
+      "Thu": "TOPLAMAK",
+      "Fri": "Cuma",
+      "Sat": "Doygunluk"
+    }
+  }
+}

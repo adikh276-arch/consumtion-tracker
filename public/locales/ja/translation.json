@@ -1,0 +1,71 @@
+{
+  "app": {
+    "title": "スモークチェック",
+    "subtitle": "ほんの一瞬の正直さ。",
+    "check_in": "今日はタバコを吸いましたか？",
+    "yes": "はい",
+    "no": "いいえ",
+    "view_history": "週次履歴を表示",
+    "how_many": "タバコを何本吸いましたか？",
+    "urge_time": "その衝動が最も強く感じられたのはいつですか?",
+    "feel": "今はどう感じていますか？",
+    "next_time": "次回はどのように変えてみたいと思いますか?",
+    "reflection_placeholder": "例：点火前に10分待つ",
+    "save": "今すぐ節約",
+    "awareness": "気づくことで変化が始まります。",
+    "tomorrow": "明日はまた別のチャンスです。そしてあなたにはその能力があります。",
+    "done": "終わり"
+  },
+  "feedback": {
+    "stayed_smoke_free": "今日は禁煙でしたね。",
+    "choice_matters": "その選択はあなたが思っている以上に重要です。",
+    "continue": "続く",
+    "strengthening": "あなたはコントロールを強化しています。",
+    "keep_showing_up": "自分のために行動し続けてください。それは効果があります。",
+    "finish": "チェックイン完了",
+    "saved": "保存されました",
+    "view_week": "週の表示"
+  },
+  "options": {
+    "count": {
+      "1": "1",
+      "2_3": "2～3",
+      "4_5": "4～5",
+      "more_5": "5以上"
+    },
+    "urge": {
+      "morning": "朝",
+      "afternoon": "午後",
+      "evening": "夕方",
+      "late_night": "深夜"
+    },
+    "feel": {
+      "okay": "わかった",
+      "neutral": "中性",
+      "not_great": "あまり良くない"
+    }
+  },
+  "history": {
+    "title": "あなたの週",
+    "subtitle": "過去7日間を一目で",
+    "smoke_free": "禁煙",
+    "smoked": "燻製",
+    "no_data": "データなし",
+    "smoke_free_check": "禁煙✓",
+    "cig": "シガレット",
+    "cigs": "タバコ",
+    "consistency": "驚くべき一貫性 — あなた自身がそれを証明しています。",
+    "progress": "週の半分以上は禁煙。本当に進歩ですね。",
+    "every_day_counts": "禁煙の一日一日が大切です。これからも続けてください。",
+    "start_checkin": "今日のチェックインを開始する",
+    "days": {
+      "Sun": "太陽",
+      "Mon": "私の",
+      "Tue": "火曜",
+      "Wed": "水曜",
+      "Thu": "集める",
+      "Fri": "金曜",
+      "Sat": "土"
+    }
+  }
+}

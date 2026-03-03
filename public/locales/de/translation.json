@@ -1,0 +1,71 @@
+{
+  "app": {
+    "title": "Rauchprüfung",
+    "subtitle": "Nur mal ganz ehrlich.",
+    "check_in": "Hast du heute eine Zigarette geraucht?",
+    "yes": "Ja",
+    "no": "NEIN",
+    "view_history": "Wochenverlauf anzeigen",
+    "how_many": "Wie viele Zigaretten hast du geraucht?",
+    "urge_time": "Wann war der Drang am stärksten?",
+    "feel": "Wie stehst du jetzt dazu?",
+    "next_time": "Was würdest du beim nächsten Mal anders machen?",
+    "reflection_placeholder": "z.B. 10 Minuten warten, bevor Sie es anzünden",
+    "save": "Heute sparen",
+    "awareness": "Bewusstsein ist der Anfang von Veränderung.",
+    "tomorrow": "Morgen ist eine neue Chance – und du bist dazu fähig.",
+    "done": "Erledigt"
+  },
+  "feedback": {
+    "stayed_smoke_free": "Du bist heute rauchfrei geblieben.",
+    "choice_matters": "Diese Entscheidung ist wichtiger, als du denkst.",
+    "continue": "Weitermachen",
+    "strengthening": "Du verstärkst deine Kontrolle.",
+    "keep_showing_up": "Sei weiterhin für dich selbst da – es funktioniert.",
+    "finish": "Check-in abschließen",
+    "saved": "Gespeichert",
+    "view_week": "Ihre Woche ansehen"
+  },
+  "options": {
+    "count": {
+      "1": "1",
+      "2_3": "2–3",
+      "4_5": "4–5",
+      "more_5": "Mehr als 5"
+    },
+    "urge": {
+      "morning": "Morgen",
+      "afternoon": "Nachmittag",
+      "evening": "Abend",
+      "late_night": "Spät in der Nacht"
+    },
+    "feel": {
+      "okay": "Okay",
+      "neutral": "Neutral",
+      "not_great": "Nicht so toll"
+    }
+  },
+  "history": {
+    "title": "Ihre Woche",
+    "subtitle": "Die letzten 7 Tage im Überblick",
+    "smoke_free": "Rauchfrei",
+    "smoked": "Geräuchert",
+    "no_data": "Keine Daten",
+    "smoke_free_check": "Rauchfrei ✓",
+    "cig": "Zigarette",
+    "cigs": "Zigaretten",
+    "consistency": "Unglaubliche Konstanz – du beweist es dir selbst.",
+    "progress": "Mehr als die Hälfte der Woche rauchfrei. Das ist ein echter Fortschritt.",
+    "every_day_counts": "Jeder rauchfreie Tag zählt. Mach weiter.",
+    "start_checkin": "Starten Sie den heutigen Check-in",
+    "days": {
+      "Sun": "Sonne",
+      "Mon": "Mein",
+      "Tue": "Di.",
+      "Wed": "Heiraten",
+      "Thu": "Sammeln",
+      "Fri": "Freitag",
+      "Sat": "Sa"
+    }
+  }
+}

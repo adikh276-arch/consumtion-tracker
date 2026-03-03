@@ -1,0 +1,71 @@
+{
+  "app": {
+    "title": "스모크 체크",
+    "subtitle": "솔직히 말씀드리자면,",
+    "check_in": "오늘 담배 피웠어?",
+    "yes": "예",
+    "no": "아니요",
+    "view_history": "주간 내역 보기",
+    "how_many": "담배를 몇 개비나 피웠어?",
+    "urge_time": "그 충동을 가장 강하게 느낀 순간은 언제였나요?",
+    "feel": "지금은 어떻게 생각하세요?",
+    "next_time": "다음번에는 무엇을 다르게 해보고 싶으세요?",
+    "reflection_placeholder": "예: 불을 붙이기 전에 10분 기다리세요",
+    "save": "오늘 절약하세요",
+    "awareness": "변화는 인식에서 시작됩니다.",
+    "tomorrow": "내일은 또 다른 기회입니다. 그리고 당신은 해낼 수 있습니다.",
+    "done": "완료"
+  },
+  "feedback": {
+    "stayed_smoke_free": "오늘 담배를 피우지 않으셨군요.",
+    "choice_matters": "그 선택은 당신이 생각하는 것보다 훨씬 중요합니다.",
+    "continue": "계속하다",
+    "strengthening": "당신은 통제력을 강화하고 있습니다.",
+    "keep_showing_up": "자신을 위해 꾸준히 노력하세요. 효과가 있을 거예요.",
+    "finish": "체크인 완료",
+    "saved": "저장됨",
+    "view_week": "이번 주 일정을 확인하세요"
+  },
+  "options": {
+    "count": {
+      "1": "1",
+      "2_3": "2~3세",
+      "4_5": "4~5세",
+      "more_5": "5개 이상"
+    },
+    "urge": {
+      "morning": "아침",
+      "afternoon": "오후",
+      "evening": "저녁",
+      "late_night": "늦은 밤"
+    },
+    "feel": {
+      "okay": "좋아요",
+      "neutral": "중립적",
+      "not_great": "별로 좋지 않음"
+    }
+  },
+  "history": {
+    "title": "이번 주",
+    "subtitle": "지난 7일간의 주요 동향을 한눈에 살펴보세요",
+    "smoke_free": "금연",
+    "smoked": "그을린",
+    "no_data": "데이터 없음",
+    "smoke_free_check": "금연 ✓",
+    "cig": "담배",
+    "cigs": "담배",
+    "consistency": "놀라운 꾸준함이시네요. 스스로에게 증명하고 계십니다.",
+    "progress": "일주일 중 절반 이상을 금연으로 보냈으니, 이는 상당한 발전입니다.",
+    "every_day_counts": "담배를 피우지 않는 하루하루가 소중합니다. 계속 실천하세요.",
+    "start_checkin": "오늘 체크인을 시작하세요",
+    "days": {
+      "Sun": "해",
+      "Mon": "나의",
+      "Tue": "화요일",
+      "Wed": "수요일",
+      "Thu": "모으다",
+      "Fri": "금요일",
+      "Sat": "앉았다"
+    }
+  }
+}

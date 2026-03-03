@@ -1,0 +1,71 @@
+{
+  "app": {
+    "title": "Contrôle de fumée",
+    "subtitle": "Juste un moment de sincérité.",
+    "check_in": "Avez-vous fumé une cigarette aujourd'hui ?",
+    "yes": "Oui",
+    "no": "Non",
+    "view_history": "Consulter l'historique hebdomadaire",
+    "how_many": "Combien de cigarettes avez-vous fumées ?",
+    "urge_time": "À quel moment cette envie s'est-elle fait le plus sentir ?",
+    "feel": "Qu'en pensez-vous maintenant ?",
+    "next_time": "Que souhaiteriez-vous faire différemment la prochaine fois ?",
+    "reflection_placeholder": "Par exemple, attendez 10 minutes avant d'allumer.",
+    "save": "Économisez dès aujourd'hui",
+    "awareness": "La prise de conscience est le point de départ du changement.",
+    "tomorrow": "Demain est une autre opportunité — et vous en êtes capable.",
+    "done": "Fait"
+  },
+  "feedback": {
+    "stayed_smoke_free": "Vous êtes resté(e) non-fumeur(se) aujourd'hui.",
+    "choice_matters": "Ce choix est plus important que vous ne le pensez.",
+    "continue": "Continuer",
+    "strengthening": "Vous renforcez votre contrôle.",
+    "keep_showing_up": "Continuez à prendre soin de vous — ça fonctionne.",
+    "finish": "Terminer l'enregistrement",
+    "saved": "Enregistré",
+    "view_week": "Consultez votre semaine"
+  },
+  "options": {
+    "count": {
+      "1": "1",
+      "2_3": "2–3",
+      "4_5": "4–5",
+      "more_5": "Plus de 5"
+    },
+    "urge": {
+      "morning": "Matin",
+      "afternoon": "Après-midi",
+      "evening": "Soirée",
+      "late_night": "Tard dans la nuit"
+    },
+    "feel": {
+      "okay": "D'accord",
+      "neutral": "Neutre",
+      "not_great": "Pas terrible"
+    }
+  },
+  "history": {
+    "title": "Votre semaine",
+    "subtitle": "Aperçu des 7 derniers jours",
+    "smoke_free": "Non-fumeur",
+    "smoked": "Fumé",
+    "no_data": "Aucune donnée",
+    "smoke_free_check": "Non-fumeur ✓",
+    "cig": "cigarette",
+    "cigs": "cigarettes",
+    "consistency": "Une constance incroyable — vous vous le prouvez à vous-même.",
+    "progress": "Plus de la moitié de la semaine sans fumer. C'est un vrai progrès.",
+    "every_day_counts": "Chaque jour sans fumer compte. Continuez.",
+    "start_checkin": "Commencez l'enregistrement d'aujourd'hui",
+    "days": {
+      "Sun": "Soleil",
+      "Mon": "Mon",
+      "Tue": "Mar",
+      "Wed": "Épouser",
+      "Thu": "Collecter",
+      "Fri": "Ven",
+      "Sat": "Assis"
+    }
+  }
+}

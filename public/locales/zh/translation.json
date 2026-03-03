@@ -1,0 +1,71 @@
+{
+  "app": {
+    "title": "烟雾检查",
+    "subtitle": "坦诚相待片刻。",
+    "check_in": "你今天抽烟了吗？",
+    "yes": "是的",
+    "no": "不",
+    "view_history": "查看每周历史记录",
+    "how_many": "你抽了多少支烟？",
+    "urge_time": "什么时候这种冲动最强烈？",
+    "feel": "你现在对此有何感想？",
+    "next_time": "下次你想做出哪些不同的尝试？",
+    "reflection_placeholder": "例如：等待 10 分钟后再点火",
+    "save": "立即节省",
+    "awareness": "意识的觉醒是改变的开始。",
+    "tomorrow": "明天又是一个新的机会——而你完全有能力把握它。",
+    "done": "完毕"
+  },
+  "feedback": {
+    "stayed_smoke_free": "你今天没有吸烟。",
+    "choice_matters": "这个选择比你想象的更重要。",
+    "continue": "继续",
+    "strengthening": "你正在加强控制。",
+    "keep_showing_up": "坚持为自己努力——这真的有效。",
+    "finish": "完成入住手续",
+    "saved": "已保存",
+    "view_week": "查看您的一周"
+  },
+  "options": {
+    "count": {
+      "1": "1",
+      "2_3": "2-3",
+      "4_5": "4-5",
+      "more_5": "超过5"
+    },
+    "urge": {
+      "morning": "早晨",
+      "afternoon": "下午",
+      "evening": "晚上",
+      "late_night": "深夜"
+    },
+    "feel": {
+      "okay": "好的",
+      "neutral": "中性的",
+      "not_great": "不太好"
+    }
+  },
+  "history": {
+    "title": "你的一周",
+    "subtitle": "过去7天概览",
+    "smoke_free": "无烟环境",
+    "smoked": "熏制",
+    "no_data": "无数据",
+    "smoke_free_check": "无烟环境 ✓",
+    "cig": "卷烟",
+    "cigs": "香烟",
+    "consistency": "令人难以置信的稳定性——你正在用实际行动证明这一点。",
+    "progress": "一周超过一半的时间不抽烟。这真是个进步。",
+    "every_day_counts": "每一天不吸烟都算数。坚持下去。",
+    "start_checkin": "开始今天的入住登记",
+    "days": {
+      "Sun": "太阳",
+      "Mon": "我的",
+      "Tue": "星期二",
+      "Wed": "星期三",
+      "Thu": "收集",
+      "Fri": "星期五",
+      "Sat": "星期六"
+    }
+  }
+}

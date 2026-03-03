@@ -1,0 +1,71 @@
+{
+    "app": {
+        "title": "Smoke Check",
+        "subtitle": "Just a moment of honesty.",
+        "check_in": "Did you smoke a cigarette today?",
+        "yes": "Yes",
+        "no": "No",
+        "view_history": "View Weekly History",
+        "how_many": "How many cigarettes did you smoke?",
+        "urge_time": "When did the urge feel strongest?",
+        "feel": "How do you feel about it now?",
+        "next_time": "What would you like to do differently next time?",
+        "reflection_placeholder": "e.g. Wait 10 min before lighting up",
+        "save": "Save Today",
+        "awareness": "Awareness is how change begins.",
+        "tomorrow": "Tomorrow is another opportunity — and you're capable of it.",
+        "done": "Done"
+    },
+    "feedback": {
+        "stayed_smoke_free": "You stayed smoke-free today.",
+        "choice_matters": "That choice matters more than you think.",
+        "continue": "Continue",
+        "strengthening": "You're strengthening your control.",
+        "keep_showing_up": "Keep showing up for yourself — it's working.",
+        "finish": "Finish Check-In",
+        "saved": "Saved",
+        "view_week": "View Your Week"
+    },
+    "options": {
+        "count": {
+            "1": "1",
+            "2_3": "2–3",
+            "4_5": "4–5",
+            "more_5": "More than 5"
+        },
+        "urge": {
+            "morning": "Morning",
+            "afternoon": "Afternoon",
+            "evening": "Evening",
+            "late_night": "Late night"
+        },
+        "feel": {
+            "okay": "Okay",
+            "neutral": "Neutral",
+            "not_great": "Not great"
+        }
+    },
+    "history": {
+        "title": "Your Week",
+        "subtitle": "Last 7 days at a glance",
+        "smoke_free": "Smoke-free",
+        "smoked": "Smoked",
+        "no_data": "No data",
+        "smoke_free_check": "Smoke-free ✓",
+        "cig": "cig",
+        "cigs": "cigs",
+        "consistency": "Incredible consistency — you're proving it to yourself.",
+        "progress": "More than half the week smoke-free. That's real progress.",
+        "every_day_counts": "Every smoke-free day counts. Keep going.",
+        "start_checkin": "Start Today's Check-In",
+        "days": {
+            "Sun": "Sun",
+            "Mon": "Mon",
+            "Tue": "Tue",
+            "Wed": "Wed",
+            "Thu": "Thu",
+            "Fri": "Fri",
+            "Sat": "Sat"
+        }
+    }
+}

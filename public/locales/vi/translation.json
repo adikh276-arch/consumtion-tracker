@@ -1,0 +1,71 @@
+{
+  "app": {
+    "title": "Kiểm tra khói",
+    "subtitle": "Chỉ một chút thành thật thôi.",
+    "check_in": "Hôm nay bạn có hút thuốc lá không?",
+    "yes": "Đúng",
+    "no": "KHÔNG",
+    "view_history": "Xem lịch sử hàng tuần",
+    "how_many": "Bạn đã hút bao nhiêu điếu thuốc?",
+    "urge_time": "Cảm giác thôi thúc mạnh nhất xuất hiện vào thời điểm nào?",
+    "feel": "Bây giờ bạn cảm thấy thế nào về điều đó?",
+    "next_time": "Lần tới bạn muốn làm gì khác đi?",
+    "reflection_placeholder": "Ví dụ: Chờ 10 phút trước khi châm lửa.",
+    "save": "Tiết kiệm ngay hôm nay!",
+    "awareness": "Nhận thức là bước khởi đầu của sự thay đổi.",
+    "tomorrow": "Ngày mai là một cơ hội khác — và bạn hoàn toàn có khả năng nắm bắt nó.",
+    "done": "Xong"
+  },
+  "feedback": {
+    "stayed_smoke_free": "Hôm nay bạn đã không hút thuốc.",
+    "choice_matters": "Sự lựa chọn đó quan trọng hơn bạn nghĩ.",
+    "continue": "Tiếp tục",
+    "strengthening": "Bạn đang củng cố quyền kiểm soát của mình.",
+    "keep_showing_up": "Hãy tiếp tục quan tâm đến bản thân mình — điều đó đang có hiệu quả.",
+    "finish": "Hoàn tất thủ tục nhận phòng",
+    "saved": "Đã lưu",
+    "view_week": "Xem tuần của bạn"
+  },
+  "options": {
+    "count": {
+      "1": "1",
+      "2_3": "2–3",
+      "4_5": "4–5",
+      "more_5": "Hơn 5"
+    },
+    "urge": {
+      "morning": "Buổi sáng",
+      "afternoon": "Buổi chiều",
+      "evening": "Buổi tối",
+      "late_night": "Đêm muộn"
+    },
+    "feel": {
+      "okay": "Đồng ý",
+      "neutral": "Trung lập",
+      "not_great": "Không tốt lắm"
+    }
+  },
+  "history": {
+    "title": "Tuần của bạn",
+    "subtitle": "Tổng quan 7 ngày qua",
+    "smoke_free": "Không khói thuốc",
+    "smoked": "hun khói",
+    "no_data": "Không có dữ liệu",
+    "smoke_free_check": "Không khói thuốc ✓",
+    "cig": "thuốc lá",
+    "cigs": "thuốc lá",
+    "consistency": "Sự ổn định đáng kinh ngạc — bạn đang tự chứng minh điều đó cho chính mình.",
+    "progress": "Hơn nửa tuần không hút thuốc. Đó là tiến bộ thực sự.",
+    "every_day_counts": "Mỗi ngày không khói thuốc đều có ý nghĩa. Hãy tiếp tục nhé.",
+    "start_checkin": "Bắt đầu thủ tục nhận phòng hôm nay",
+    "days": {
+      "Sun": "Mặt trời",
+      "Mon": "Của tôi",
+      "Tue": "Thứ Ba",
+      "Wed": "Thứ Tư",
+      "Thu": "Thu",
+      "Fri": "Thứ Sáu",
+      "Sat": "Đã ngồi"
+    }
+  }
+}

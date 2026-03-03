@@ -1,0 +1,71 @@
+{
+  "app": {
+    "title": "Pagsusuri sa Usok",
+    "subtitle": "Sandali lang ng katapatan.",
+    "check_in": "Naninigarilyo ka ba ng sigarilyo ngayon?",
+    "yes": "Oo",
+    "no": "Hindi",
+    "view_history": "Tingnan ang Lingguhang Kasaysayan",
+    "how_many": "Ilang sigarilyo ang hinithit mo?",
+    "urge_time": "Kailan naramdaman ang pinakamalakas na pagnanasa?",
+    "feel": "Ano ang nararamdaman mo ngayon tungkol dito?",
+    "next_time": "Ano ang gusto mong gawin nang iba sa susunod?",
+    "reflection_placeholder": "hal. Maghintay ng 10 minuto bago sindihan",
+    "save": "Mag-save Ngayon",
+    "awareness": "Ang kamalayan ay kung paano nagsisimula ang pagbabago.",
+    "tomorrow": "Bukas ay isa na namang pagkakataon — at kaya mo iyon.",
+    "done": "Tapos na"
+  },
+  "feedback": {
+    "stayed_smoke_free": "Nanatili kang hindi naninigarilyo ngayon.",
+    "choice_matters": "Mas mahalaga ang pagpiling iyan kaysa sa iniisip mo.",
+    "continue": "Magpatuloy",
+    "strengthening": "Pinapalakas mo ang kontrol mo.",
+    "keep_showing_up": "Patuloy na magpakitang-gilas — epektibo naman ito.",
+    "finish": "Tapusin ang Pag-check-in",
+    "saved": "Na-save",
+    "view_week": "Tingnan ang Iyong Linggo"
+  },
+  "options": {
+    "count": {
+      "1": "1",
+      "2_3": "2–3",
+      "4_5": "4–5",
+      "more_5": "Mahigit sa 5"
+    },
+    "urge": {
+      "morning": "Umaga",
+      "afternoon": "Hapon",
+      "evening": "Gabi",
+      "late_night": "Gabi na"
+    },
+    "feel": {
+      "okay": "Sige",
+      "neutral": "Neutral",
+      "not_great": "Hindi maganda"
+    }
+  },
+  "history": {
+    "title": "Ang Iyong Linggo",
+    "subtitle": "Sa madaling salita, huling 7 araw",
+    "smoke_free": "Bawal manigarilyo",
+    "smoked": "Pinausukan",
+    "no_data": "Walang datos",
+    "smoke_free_check": "Bawal manigarilyo ✓",
+    "cig": "sigarilyo",
+    "cigs": "mga sigarilyo",
+    "consistency": "Hindi kapani-paniwalang pagiging consistent — pinapatunayan mo ito sa iyong sarili.",
+    "progress": "Mahigit kalahati ng linggong walang paninigarilyo. Iyan ay isang tunay na pag-unlad.",
+    "every_day_counts": "Mahalaga ang bawat araw na walang paninigarilyo. Magpatuloy ka lang.",
+    "start_checkin": "Simulan ang Pag-check-in Ngayon",
+    "days": {
+      "Sun": "Araw",
+      "Mon": "Aking",
+      "Tue": "Martes",
+      "Wed": "Miyerkules",
+      "Thu": "Kolektahin",
+      "Fri": "Biyernes",
+      "Sat": "Sabado"
+    }
+  }
+}

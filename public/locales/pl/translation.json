@@ -1,0 +1,71 @@
+{
+  "app": {
+    "title": "Kontrola dymu",
+    "subtitle": "Chwila szczerości.",
+    "check_in": "Czy paliłeś dziś papierosa?",
+    "yes": "Tak",
+    "no": "NIE",
+    "view_history": "Wyświetl historię tygodniową",
+    "how_many": "Ile papierosów wypaliłeś?",
+    "urge_time": "Kiedy potrzeba była najsilniejsza?",
+    "feel": "Jak się z tym teraz czujesz?",
+    "next_time": "Co chciałbyś zrobić inaczej następnym razem?",
+    "reflection_placeholder": "np. Odczekaj 10 minut przed zapaleniem",
+    "save": "Zapisz dziś",
+    "awareness": "Zmiana zaczyna się od świadomości.",
+    "tomorrow": "Jutro pojawi się kolejna szansa — i ty jesteś w stanie ją wykorzystać.",
+    "done": "Zrobione"
+  },
+  "feedback": {
+    "stayed_smoke_free": "Dziś nie paliłeś.",
+    "choice_matters": "Ten wybór ma większe znaczenie niż myślisz.",
+    "continue": "Kontynuować",
+    "strengthening": "Wzmacniasz swoją kontrolę.",
+    "keep_showing_up": "Nadal bądź dla siebie wsparciem — to działa.",
+    "finish": "Zakończ odprawę",
+    "saved": "Zapisano",
+    "view_week": "Zobacz swój tydzień"
+  },
+  "options": {
+    "count": {
+      "1": "1",
+      "2_3": "2–3",
+      "4_5": "4–5",
+      "more_5": "Ponad 5"
+    },
+    "urge": {
+      "morning": "Poranek",
+      "afternoon": "Popołudnie",
+      "evening": "Wieczór",
+      "late_night": "Późna noc"
+    },
+    "feel": {
+      "okay": "Dobra",
+      "neutral": "Neutralny",
+      "not_great": "Niezbyt dobrze"
+    }
+  },
+  "history": {
+    "title": "Twój tydzień",
+    "subtitle": "Ostatnie 7 dni w skrócie",
+    "smoke_free": "Bez dymu",
+    "smoked": "Wędzony",
+    "no_data": "Brak danych",
+    "smoke_free_check": "Bez dymu ✓",
+    "cig": "papieros",
+    "cigs": "papierosy",
+    "consistency": "Niesamowita konsekwencja — sam to udowadniasz.",
+    "progress": "Ponad połowa tygodnia bez palenia. To prawdziwy postęp.",
+    "every_day_counts": "Każdy dzień bez dymu się liczy. Trzymaj tak dalej.",
+    "start_checkin": "Rozpocznij dzisiejszą odprawę",
+    "days": {
+      "Sun": "Słoneczny",
+      "Mon": "Mój",
+      "Tue": "wtorek",
+      "Wed": "Poślubić",
+      "Thu": "Zbierać",
+      "Fri": "Pt",
+      "Sat": "Sobota"
+    }
+  }
+}

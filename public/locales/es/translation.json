@@ -1,0 +1,71 @@
+{
+  "app": {
+    "title": "Control de humo",
+    "subtitle": "Sólo un momento de honestidad.",
+    "check_in": "¿Fumaste un cigarrillo hoy?",
+    "yes": "Sí",
+    "no": "No",
+    "view_history": "Ver historial semanal",
+    "how_many": "¿Cuántos cigarrillos fumaste?",
+    "urge_time": "¿Cuándo se sintió más fuerte el impulso?",
+    "feel": "¿Cómo te sientes al respecto ahora?",
+    "next_time": "¿Qué te gustaría hacer diferente la próxima vez?",
+    "reflection_placeholder": "p.ej. Espere 10 minutos antes de encenderlo",
+    "save": "Ahorre hoy",
+    "awareness": "La concientización es como comienza el cambio.",
+    "tomorrow": "Mañana es otra oportunidad y eres capaz de aprovecharla.",
+    "done": "Hecho"
+  },
+  "feedback": {
+    "stayed_smoke_free": "Hoy te mantuviste libre de humo.",
+    "choice_matters": "Esa elección importa más de lo que crees.",
+    "continue": "Continuar",
+    "strengthening": "Estás fortaleciendo tu control.",
+    "keep_showing_up": "Sigue presentándote: está funcionando.",
+    "finish": "Finalizar el check-in",
+    "saved": "Guardado",
+    "view_week": "Ver tu semana"
+  },
+  "options": {
+    "count": {
+      "1": "1",
+      "2_3": "2–3",
+      "4_5": "4–5",
+      "more_5": "Más de 5"
+    },
+    "urge": {
+      "morning": "Mañana",
+      "afternoon": "Tarde",
+      "evening": "Noche",
+      "late_night": "Tarde en la noche"
+    },
+    "feel": {
+      "okay": "Bueno",
+      "neutral": "Neutral",
+      "not_great": "No muy bueno"
+    }
+  },
+  "history": {
+    "title": "Tu semana",
+    "subtitle": "Los últimos 7 días de un vistazo",
+    "smoke_free": "Libre de humo",
+    "smoked": "Ahumado",
+    "no_data": "No hay datos",
+    "smoke_free_check": "Libre de humo ✓",
+    "cig": "cigarrillo",
+    "cigs": "cigarrillos",
+    "consistency": "Increíble consistencia: lo estás demostrando tú mismo.",
+    "progress": "Más de la mitad de la semana sin fumar. Eso sí que es un avance.",
+    "every_day_counts": "Cada día sin fumar cuenta. ¡Sigue así!",
+    "start_checkin": "Comienza el check-in de hoy",
+    "days": {
+      "Sun": "Sol",
+      "Mon": "Mi",
+      "Tue": "Mar",
+      "Wed": "Casarse",
+      "Thu": "Recolectar",
+      "Fri": "Vie",
+      "Sat": "Se sentó"
+    }
+  }
+}

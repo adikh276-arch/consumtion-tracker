@@ -1,0 +1,71 @@
+{
+  "app": {
+    "title": "Verificação de fumaça",
+    "subtitle": "Só um momento de sinceridade.",
+    "check_in": "Você fumou um cigarro hoje?",
+    "yes": "Sim",
+    "no": "Não",
+    "view_history": "Ver histórico semanal",
+    "how_many": "Quantos cigarros você fumou?",
+    "urge_time": "Em que momento a vontade foi mais forte?",
+    "feel": "Como você se sente em relação a isso agora?",
+    "next_time": "O que você gostaria de fazer de diferente da próxima vez?",
+    "reflection_placeholder": "Exemplo: Aguarde 10 minutos antes de acender.",
+    "save": "Economize hoje",
+    "awareness": "A conscientização é o ponto de partida para a mudança.",
+    "tomorrow": "Amanhã é uma nova oportunidade — e você é capaz de aproveitá-la.",
+    "done": "Feito"
+  },
+  "feedback": {
+    "stayed_smoke_free": "Você não fumou hoje.",
+    "choice_matters": "Essa escolha importa mais do que você imagina.",
+    "continue": "Continuar",
+    "strengthening": "Você está fortalecendo seu controle.",
+    "keep_showing_up": "Continue priorizando a si mesma — está funcionando.",
+    "finish": "Finalizar Check-in",
+    "saved": "Salvo",
+    "view_week": "Veja sua semana"
+  },
+  "options": {
+    "count": {
+      "1": "1",
+      "2_3": "2–3",
+      "4_5": "4–5",
+      "more_5": "Mais de 5"
+    },
+    "urge": {
+      "morning": "Manhã",
+      "afternoon": "Tarde",
+      "evening": "Noite",
+      "late_night": "Tarde da noite"
+    },
+    "feel": {
+      "okay": "OK",
+      "neutral": "Neutro",
+      "not_great": "Não é ótimo"
+    }
+  },
+  "history": {
+    "title": "Sua semana",
+    "subtitle": "Resumo dos últimos 7 dias",
+    "smoke_free": "Ambiente livre de fumo",
+    "smoked": "Defumado",
+    "no_data": "Sem dados",
+    "smoke_free_check": "Ambiente livre de fumo ✓",
+    "cig": "cig",
+    "cigs": "cigarros",
+    "consistency": "Uma consistência incrível — você está provando isso para si mesmo.",
+    "progress": "Mais da metade da semana sem fumar. Isso sim é um progresso real.",
+    "every_day_counts": "Cada dia sem fumar conta. Continue assim.",
+    "start_checkin": "Comece o check-in de hoje",
+    "days": {
+      "Sun": "Sol",
+      "Mon": "Meu",
+      "Tue": "ter",
+      "Wed": "qua",
+      "Thu": "Coletar",
+      "Fri": "sex",
+      "Sat": "Sentado"
+    }
+  }
+}
