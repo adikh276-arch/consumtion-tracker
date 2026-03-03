@@ -18,10 +18,10 @@ RUN npm run build
 FROM nginx:alpine
 
 # Create the target directory for subpath hosting
-RUN mkdir -p /usr/share/nginx/html/consumption_tracker
+RUN mkdir -p /usr/share/nginx/html/app/consumption_tracker
 
 # Copy the build output to the subpath directory
-COPY --from=builder /app/dist /usr/share/nginx/html/consumption_tracker
+COPY --from=builder /app/dist /usr/share/nginx/html/app/consumption_tracker
 
 # Copy custom nginx configuration
 # Assuming the default nginx config loads files from /etc/nginx/conf.d/

@@ -17,7 +17,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <AuthProvider>
-        <BrowserRouter basename="/consumption_tracker">
+        <BrowserRouter basename="/app/consumption_tracker">
           <LanguageSelector />
           <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>
             <Routes>
